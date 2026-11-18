@@ -189,7 +189,7 @@ public class CentralResgate implements Serializable {
     }
 
     public Relatorio gerarRelatorioGeral() {
-        return new Relatorio(getRobos(), getMissoes());
+         return new Relatorio(getRobos(), getMissoes());
     }
 
     // regras

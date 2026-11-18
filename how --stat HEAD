@@ -1,0 +1,12 @@
+[33m2cc4e78[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/central[m[33m, [m[1;31morigin/feature/central[m[33m)[m implementa CentralResgate
+[33mc3ba657[m implementa Missao
+[33m3b5facb[m merge feature/robos
+[33m7ad45b7[m implementa a classe AreaOperacao
+[33m428fc5b[m[33m ([m[1;31morigin/feature/robos[m[33m)[m mudei algo e não sei o que foi
+[33m39830bb[m adiciona os enums
+[33m1cb095e[m implementa classe RoboTerrestre
+[33m474d1ee[m implementa a classe Drone
+[33md5c0a71[m implementa a classe Robo
+[33m41c6560[m adiciona interface Comunicavel
+[33m8ee836c[m adiciona enum StatusRobo
+[33m308ffe1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m chore: initial commit
