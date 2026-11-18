@@ -1,0 +1,7 @@
+========== RELATÓRIO GERAL ==========
+Data de geração: 18/11/2026 18:50:45
+Total de robôs: 5
+Total de missões: 5
+Missões concluídas: 1
+Missões pendentes: 4
+=====================================

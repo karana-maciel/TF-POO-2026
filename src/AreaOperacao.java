@@ -1,4 +1,8 @@
-public class AreaOperacao {
+import java.io.Serializable;
+
+public class AreaOperacao implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private int id;
     private String nome;
     private String localizacao;
@@ -6,29 +10,26 @@ public class AreaOperacao {
     private NivelRisco nivelRisco;
     private String descricao;
 
-    public AreaOperacao(int id, String nome, String localizacao, TipoTerreno tipoTerreno, NivelRisco nivelRisco, String descricao) {
+    public AreaOperacao(int id, String nome, String localizacao,
+                        TipoTerreno tipoTerreno, NivelRisco nivelRisco,
+                        String descricao) {
         if (id <= 0) {
-            throw new IllegalArgumentException("O ID da área de operação deve ser positivo.");
+            throw new DadosInvalidosException("O ID da área deve ser positivo.");
         }
-
         if (nome == null || nome.isBlank()) {
-            throw new IllegalArgumentException("O nome da área não pode ser vazio.");
+            throw new DadosInvalidosException("O nome da área não pode ser vazio.");
         }
-
         if (localizacao == null || localizacao.isBlank()) {
-            throw new IllegalArgumentException("A localização não pode ser vazia.");
+            throw new DadosInvalidosException("A localização não pode ser vazia.");
         }
-
         if (tipoTerreno == null) {
-            throw new IllegalArgumentException("O tipo de terreno deve ser informado.");
+            throw new DadosInvalidosException("O tipo de terreno deve ser informado.");
         }
-
         if (nivelRisco == null) {
-            throw new IllegalArgumentException("O nível de risco deve ser informado.");
+            throw new DadosInvalidosException("O nível de risco deve ser informado.");
         }
-
         if (descricao == null || descricao.isBlank()) {
-            throw new IllegalArgumentException("A descrição não pode ser vazia.");
+            throw new DadosInvalidosException("A descrição não pode ser vazia.");
         }
 
         this.id = id;
@@ -65,9 +66,8 @@ public class AreaOperacao {
 
     public void atualizarNivelRisco(NivelRisco novoNivelRisco) {
         if (novoNivelRisco == null) {
-            throw new IllegalArgumentException("O nível de risco não pode ser nulo.");
+            throw new DadosInvalidosException("O nível de risco não pode ser nulo.");
         }
-
         this.nivelRisco = novoNivelRisco;
     }
 
